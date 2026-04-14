@@ -1,11 +1,11 @@
-# 🏙 UDHBHA Property Registry Monorepo
+# 🏙 TitleVault Property Registry Monorepo
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61DAFB.svg?logo=react)
 ![Python](https://img.shields.io/badge/Backend-Python%20Flask-3776AB.svg?logo=python)
 ![Supabase](https://img.shields.io/badge/Database-Supabase%20PostgreSQL-3ECF8E.svg?logo=supabase)
 
-A next-generation, high-performance monorepo platform tailored for urban property registration and surveying. The UDHBHA platform unifies real-time WebGL property mapping, algorithmic document verification, spatial risk-scoring, and state-machine-driven approval logic into an ultra-fast, typed ecosystem.
+A next-generation, high-performance monorepo platform tailored for urban property registration and surveying. The TitleVault platform unifies real-time WebGL property mapping, algorithmic document verification, spatial risk-scoring, and state-machine-driven approval logic into an ultra-fast, typed ecosystem.
 
 ## ✨ System Features
 
@@ -30,7 +30,7 @@ A next-generation, high-performance monorepo platform tailored for urban propert
 ## 🏗️ Monorepo Structure
 
 ```text
-UDHBHA_FINAL/
+TitleVault/
 ├── apps/
 │   ├── surveyhub-registry/    # Surveyor React/Vite Frontend
 │   └── property-auditor-hub/  # Auditor React/Vite Frontend
@@ -73,7 +73,7 @@ In a **separate terminal window**:
 
 ```bash
 # Ensure you are at the monorepo root
-cd "UDHBHA_FINAL (1)"
+cd TitleVault
 
 # Install workspace dependencies cross-linked via pnpm
 pnpm install
