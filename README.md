@@ -5,7 +5,15 @@
 ![Python](https://img.shields.io/badge/Backend-Python%20Flask-3776AB.svg?logo=python)
 ![Supabase](https://img.shields.io/badge/Database-Supabase%20PostgreSQL-3ECF8E.svg?logo=supabase)
 
-A next-generation, high-performance monorepo platform tailored for urban property registration and surveying. The TitleVault platform unifies real-time WebGL property mapping, algorithmic document verification, spatial risk-scoring, and state-machine-driven approval logic into an ultra-fast, typed ecosystem.
+**TitleVault** is a next-generation **Land Registry System** designed to revolutionize how property ownership, surveying data, and land titles are recorded. 
+
+Traditional land registries rely heavily on fragmented paper deeds, static PDF maps, and siloed databases. These outdated systems often lead to overlapping property lines, fraudulent claims, fractional ownership disputes, and excruciatingly slow auditing processes. TitleVault eliminates these issues by creating a single, immutable source of truth for urban property.
+
+### 🏛 How the Land Registry Workflow Operates
+1. **The Spatial Survey (3D Mapping):** Instead of flat paper maps, a Surveyor drafts the exact geometric bounds of a property. They build a precise hierarchy of **Parcels** (the land itself), **Buildings**, **Floors**, and **Components** (individual apartments or units).
+2. **Assigning Legal Rights:** The Surveyor then allocates strict legal **Rights** (ownership percentages) to physical individuals for each specific spatial component.
+3. **The Intelligence Layer:** Before a submission is even seen by a human, TitleVault's algorithmic engine automatically flags overlapping boundaries, impossible topology layouts, ownership that exceeds 100%, and calculates a historic risk score to prevent fraud.
+4. **The Audit Protocol:** The Property Auditor reviews the interactive 3D property graph via their specialized dashboard. If all legal rules and spatial constraints pass, the deed is immutably registered to the TitleVault database.
 
 ## ✨ System Features
 
