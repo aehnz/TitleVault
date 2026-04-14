@@ -4,8 +4,13 @@ import { useNavigate } from 'react-router-dom';
 import { useSubmissionList, useDeleteSubmission, useCreateRevision } from '@/hooks/useSubmissions';
 
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Card, CardContent } from '@/components/ui/card';
+import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
+import { Button } from '@/components/ui/button';
+import { Badge } from '@/components/ui/badge';
 import StatusBadge from '@/components/shared/StatusBadge';
 import CreateRevisionModal from '@/components/revision/CreateRevisionModal';
+import { FileText, Eye, Edit, Lock, Trash2, GitBranch } from 'lucide-react';
 import {
   AlertDialog,
   AlertDialogAction,

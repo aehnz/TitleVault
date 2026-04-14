@@ -1,7 +1,11 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'sonner';
+import { Database, Trash2, Download } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 import CollapsibleSection from '@/components/shared/CollapsibleSection';
 import { saveSubmission } from '@/lib/storage';
+import { COMPLEX_DEMO_SUBMISSION } from '@/lib/complexDemoData';
 
 const SettingsPage: React.FC = () => {
   const navigate = useNavigate();

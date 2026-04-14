@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { Building2, Bell } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { useSubmission } from '@/hooks/useSubmissions';
 import StatusBadge from '@/components/shared/StatusBadge';
