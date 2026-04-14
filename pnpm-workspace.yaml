@@ -1,0 +1,4 @@
+packages:
+  - 'packages/*'
+  - 'surveyhub-registry'
+  - 'property-auditor-hub'

@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "submission_id": "sub_mall_congested_5f_claims_001",
+    "status": "DRAFT",
+    "created_by": "surveyor@demo.gov",
+    "schema_version": "v1",
+    "created_at": "2026-01-03T09:00:00Z",
+    "updated_at": "2026-01-20T19:10:00Z"
+  },
+  "parcel": {
+    "parcel_id": "prc_cong_001",
+    "name": "Utara Parcel • 5F Congested (No overlaps, in-bounds) + Claims",
+    "ref_frame": { "type": "local_planar", "units": "m" },
+    "anchors": [
+      { "id": "A1", "wgs84": [23.02251, 72.57121], "local_xy": [0, 0] },
+      { "id": "A2", "wgs84": [23.02278, 72.57212], "local_xy": [300, 12] },
+      { "id": "A3", "wgs84": [23.02186, 72.57148], "local_xy": [18, 300] }
+    ],
+    "boundary_geom": "geom_parcel_v1",
+    "docs": ["doc_parcel_survey_001"]
+  },
+  "buildings": [
+    {
+      "building_id": "bld_cong_001",
+      "parcel_id": "prc_cong_001",
+      "name": "Utara Mall • Congested 5 Floors",
+      "footprint_geom": "geom_bld_fp_v1",
+      "docs": ["doc_building_plan_001"]
+    }
+  ],
+  "floors": [
+    { "floor_id": "fl_0", "building_id": "bld_cong_001", "level": 0, "label": "Ground (Retail Dense)", "outline_geom": "geom_fl_0_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_0_plan"] },
+    { "floor_id": "fl_1", "building_id": "bld_cong_001", "level": 1, "label": "First (Retail Dense)", "outline_geom": "geom_fl_1_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_1_plan"] },
+    { "floor_id": "fl_2", "building_id": "bld_cong_001", "level": 2, "label": "Second (Retail Dense)", "outline_geom": "geom_fl_2_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_2_plan"] },
+    { "floor_id": "fl_3", "building_id": "bld_cong_001", "level": 3, "label": "Third (Offices/Services)", "outline_geom": "geom_fl_3_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_3_plan"] },
+    { "floor_id": "fl_4", "building_id": "bld_cong_001", "level": 4, "label": "Fourth (Food/Entertainment)", "outline_geom": "geom_fl_4_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_4_plan"] }
+  ],
+  "components": [
+    { "component_id": "cmp_fl0_G01", "floor_id": "fl_0", "label": "G-01", "type": "shop", "geom_ref": "geom_cmp_fl0_G01_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G01"] },
+    { "component_id": "cmp_fl0_G02", "floor_id": "fl_0", "label": "G-02", "type": "shop", "geom_ref": "geom_cmp_fl0_G02_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G02"] },
+    { "component_id": "cmp_fl0_G03", "floor_id": "fl_0", "label": "G-03", "type": "shop", "geom_ref": "geom_cmp_fl0_G03_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G03"] },
+    { "component_id": "cmp_fl0_G04", "floor_id": "fl_0", "label": "G-04", "type": "shop", "geom_ref": "geom_cmp_fl0_G04_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G04"] },
+    { "component_id": "cmp_fl0_G05", "floor_id": "fl_0", "label": "G-05", "type": "shop", "geom_ref": "geom_cmp_fl0_G05_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G05"] },
+    { "component_id": "cmp_fl0_G06", "floor_id": "fl_0", "label": "G-06", "type": "shop", "geom_ref": "geom_cmp_fl0_G06_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G06"] },
+    { "component_id": "cmp_fl0_G07", "floor_id": "fl_0", "label": "G-07", "type": "shop", "geom_ref": "geom_cmp_fl0_G07_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G07"] },
+    { "component_id": "cmp_fl0_G08", "floor_id": "fl_0", "label": "G-08", "type": "shop", "geom_ref": "geom_cmp_fl0_G08_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G08"] },
+    { "component_id": "cmp_fl0_G09", "floor_id": "fl_0", "label": "G-09", "type": "shop", "geom_ref": "geom_cmp_fl0_G09_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G09"] },
+    { "component_id": "cmp_fl0_G10", "floor_id": "fl_0", "label": "G-10", "type": "shop", "geom_ref": "geom_cmp_fl0_G10_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G10"] },
+    { "component_id": "cmp_fl0_G11", "floor_id": "fl_0", "label": "G-11", "type": "shop", "geom_ref": "geom_cmp_fl0_G11_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G11"] },
+    { "component_id": "cmp_fl0_G12", "floor_id": "fl_0", "label": "G-12", "type": "shop", "geom_ref": "geom_cmp_fl0_G12_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_G12"] },
+    { "component_id": "cmp_fl0_COR", "floor_id": "fl_0", "label": "Main Corridor", "type": "common", "geom_ref": "geom_cmp_fl0_COR_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_0_plan"] },
+
+    { "component_id": "cmp_fl1_F101", "floor_id": "fl_1", "label": "F1-101", "type": "shop", "geom_ref": "geom_cmp_fl1_F101_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F101"] },
+    { "component_id": "cmp_fl1_F102", "floor_id": "fl_1", "label": "F1-102", "type": "shop", "geom_ref": "geom_cmp_fl1_F102_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F102"] },
+    { "component_id": "cmp_fl1_F103", "floor_id": "fl_1", "label": "F1-103", "type": "shop", "geom_ref": "geom_cmp_fl1_F103_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F103"] },
+    { "component_id": "cmp_fl1_F104", "floor_id": "fl_1", "label": "F1-104", "type": "shop", "geom_ref": "geom_cmp_fl1_F104_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F104"] },
+    { "component_id": "cmp_fl1_F105", "floor_id": "fl_1", "label": "F1-105", "type": "shop", "geom_ref": "geom_cmp_fl1_F105_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F105"] },
+    { "component_id": "cmp_fl1_F106", "floor_id": "fl_1", "label": "F1-106", "type": "shop", "geom_ref": "geom_cmp_fl1_F106_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F106"] },
+    { "component_id": "cmp_fl1_F107", "floor_id": "fl_1", "label": "F1-107", "type": "shop", "geom_ref": "geom_cmp_fl1_F107_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F107"] },
+    { "component_id": "cmp_fl1_F108", "floor_id": "fl_1", "label": "F1-108", "type": "shop", "geom_ref": "geom_cmp_fl1_F108_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F108"] },
+    { "component_id": "cmp_fl1_COR", "floor_id": "fl_1", "label": "Ring Corridor", "type": "common", "geom_ref": "geom_cmp_fl1_COR_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_1_plan"] },
+
+    { "component_id": "cmp_fl2_S201", "floor_id": "fl_2", "label": "F2-201", "type": "shop", "geom_ref": "geom_cmp_fl2_S201_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_S201"] },
+    { "component_id": "cmp_fl2_S202", "floor_id": "fl_2", "label": "F2-202", "type": "shop", "geom_ref": "geom_cmp_fl2_S202_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_S202"] },
+    { "component_id": "cmp_fl2_S203", "floor_id": "fl_2", "label": "F2-203", "type": "shop", "geom_ref": "geom_cmp_fl2_S203_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_S203"] },
+    { "component_id": "cmp_fl2_S204", "floor_id": "fl_2", "label": "F2-204", "type": "shop", "geom_ref": "geom_cmp_fl2_S204_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_S204"] },
+    { "component_id": "cmp_fl2_S205", "floor_id": "fl_2", "label": "F2-205", "type": "shop", "geom_ref": "geom_cmp_fl2_S205_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_S205"] },
+    { "component_id": "cmp_fl2_S206", "floor_id": "fl_2", "label": "F2-206", "type": "shop", "geom_ref": "geom_cmp_fl2_S206_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_S206"] },
+    { "component_id": "cmp_fl2_S207", "floor_id": "fl_2", "label": "F2-207", "type": "shop", "geom_ref": "geom_cmp_fl2_S207_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_S207"] },
+    { "component_id": "cmp_fl2_S208", "floor_id": "fl_2", "label": "F2-208", "type": "shop", "geom_ref": "geom_cmp_fl2_S208_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_S208"] },
+    { "component_id": "cmp_fl2_COR", "floor_id": "fl_2", "label": "Main Corridor", "type": "common", "geom_ref": "geom_cmp_fl2_COR_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_2_plan"] },
+
+    { "component_id": "cmp_fl3_O301", "floor_id": "fl_3", "label": "F3-301", "type": "office", "geom_ref": "geom_cmp_fl3_O301_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_O301"] },
+    { "component_id": "cmp_fl3_O302", "floor_id": "fl_3", "label": "F3-302", "type": "office", "geom_ref": "geom_cmp_fl3_O302_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_O302"] },
+    { "component_id": "cmp_fl3_O303", "floor_id": "fl_3", "label": "F3-303", "type": "office", "geom_ref": "geom_cmp_fl3_O303_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_O303"] },
+    { "component_id": "cmp_fl3_O304", "floor_id": "fl_3", "label": "F3-304", "type": "office", "geom_ref": "geom_cmp_fl3_O304_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_O304"] },
+    { "component_id": "cmp_fl3_O305", "floor_id": "fl_3", "label": "F3-305", "type": "office", "geom_ref": "geom_cmp_fl3_O305_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_O305"] },
+    { "component_id": "cmp_fl3_O306", "floor_id": "fl_3", "label": "F3-306", "type": "office", "geom_ref": "geom_cmp_fl3_O306_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_O306"] },
+    { "component_id": "cmp_fl3_SVC", "floor_id": "fl_3", "label": "Service Core", "type": "utility", "geom_ref": "geom_cmp_fl3_SVC_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_3_plan"] },
+    { "component_id": "cmp_fl3_COR", "floor_id": "fl_3", "label": "Corridor", "type": "common", "geom_ref": "geom_cmp_fl3_COR_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_3_plan"] },
+
+    { "component_id": "cmp_fl4_F401", "floor_id": "fl_4", "label": "F4-401", "type": "food", "geom_ref": "geom_cmp_fl4_F401_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F401"] },
+    { "component_id": "cmp_fl4_F402", "floor_id": "fl_4", "label": "F4-402", "type": "food", "geom_ref": "geom_cmp_fl4_F402_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F402"] },
+    { "component_id": "cmp_fl4_F403", "floor_id": "fl_4", "label": "F4-403", "type": "food", "geom_ref": "geom_cmp_fl4_F403_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F403"] },
+    { "component_id": "cmp_fl4_F404", "floor_id": "fl_4", "label": "F4-404 (Arcade)", "type": "utility", "geom_ref": "geom_cmp_fl4_F404_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F404"] },
+    { "component_id": "cmp_fl4_F405", "floor_id": "fl_4", "label": "F4-405 (Cinema)", "type": "utility", "geom_ref": "geom_cmp_fl4_F405_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_sale_F405"] },
+    { "component_id": "cmp_fl4_COR", "floor_id": "fl_4", "label": "Food Court Corridor", "type": "common", "geom_ref": "geom_cmp_fl4_COR_v1", "active": { "from": "2026-01-01", "to": null }, "docs": ["doc_fl_4_plan"] }
+  ],
+  "claims": [
+    { "claim_id": "clm_own_cmp_fl0_G01", "kind": "OWNERSHIP", "target": { "kind": "component", "id": "cmp_fl0_G01" }, "holder": "did:user:ali", "tenant": "", "share": 1.0, "area_geom": null, "active": { "from": "2026-01-10", "to": null }, "docs": ["doc_sale_G01"] },
+    { "claim_id": "clm_own_cmp_fl0_G02", "kind": "OWNERSHIP", "target": { "kind": "component", "id": "cmp_fl0_G02" }, "holder": "did:user:omar", "tenant": "", "share": 1.0, "area_geom": null, "active": { "from": "2026-01-12", "to": null }, "docs": ["doc_sale_G02"] },
+    { "claim_id": "clm_lease_cmp_fl0_G02_partial", "kind": "LEASE", "target": { "kind": "component", "id": "cmp_fl0_G02" }, "holder": "", "tenant": "did:brand:kioskX", "share": 0.3, "area_geom": "geom_mask_fl0_G02_30_v1", "active": { "from": "2026-02-01", "to": "2027-01-31" }, "docs": ["doc_lease_kioskX_G02"] },
+
+    { "claim_id": "clm_own_cmp_fl1_F101", "kind": "OWNERSHIP", "target": { "kind": "component", "id": "cmp_fl1_F101" }, "holder": "did:user:sara", "tenant": "", "share": 1.0, "area_geom": null, "active": { "from": "2026-01-20", "to": null }, "docs": ["doc_sale_F101"] },
+    { "claim_id": "clm_own_cmp_fl1_F104", "kind": "OWNERSHIP", "target": { "kind": "component", "id": "cmp_fl1_F104" }, "holder": "did:user:ali", "tenant": "", "share": 1.0, "area_geom": null, "active": { "from": "2026-01-21", "to": null }, "docs": ["doc_sale_F104"] },
+    { "claim_id": "clm_occupancy_cmp_fl1_F104", "kind": "OCCUPANCY", "target": { "kind": "component", "id": "cmp_fl1_F104" }, "holder": "", "tenant": "did:brand:pizza99", "share": 1.0, "area_geom": null, "active": { "from": "2026-02-15", "to": null }, "docs": ["doc_occ_pizza99_F104"] },
+
+    { "claim_id": "clm_own_cmp_fl2_S203", "kind": "OWNERSHIP", "target": { "kind": "component", "id": "cmp_fl2_S203" }, "holder": "did:user:omar", "tenant": "", "share": 1.0, "area_geom": null, "active": { "from": "2026-01-25", "to": null }, "docs": ["doc_sale_S203"] },
+    { "claim_id": "clm_dispute_cmp_fl2_S203", "kind": "DISPUTE", "target": { "kind": "component", "id": "cmp_fl2_S203" }, "holder": "did:user:omar", "tenant": "", "share": 1.0, "area_geom": null, "active": { "from": "2026-03-01", "to": "2026-05-01" }, "docs": ["doc_notice_dispute_S203"] },
+
+    { "claim_id": "clm_lease_cmp_fl3_O301", "kind": "LEASE", "target": { "kind": "component", "id": "cmp_fl3_O301" }, "holder": "", "tenant": "did:firm:finserv", "share": 1.0, "area_geom": null, "active": { "from": "2026-02-01", "to": "2029-01-31" }, "docs": ["doc_lease_finserv_O301"] },
+
+    { "claim_id": "clm_own_cmp_fl4_F405", "kind": "OWNERSHIP", "target": { "kind": "component", "id": "cmp_fl4_F405" }, "holder": "did:corp:cinemax", "tenant": "", "share": 1.0, "area_geom": null, "active": { "from": "2026-01-18", "to": null }, "docs": ["doc_sale_F405"] }
+  ],
+  "topology_events": [],
+  "geometry_store": {
+    "geom_parcel_v1": { "polygon": [[0,0],[310,15],[300,310],[20,300],[0,0]] },
+    "geom_bld_fp_v1": { "polygon": [[20,20],[280,30],[290,180],[260,250],[60,240],[30,160],[20,20]] },
+
+    "geom_fl_0_v1": { "polygon": [[20,20],[280,30],[290,180],[260,250],[60,240],[30,160],[20,20]] },
+    "geom_fl_1_v1": { "polygon": [[22,22],[278,32],[288,178],[258,248],[62,238],[32,158],[22,22]] },
+    "geom_fl_2_v1": { "polygon": [[24,24],[276,34],[286,176],[256,246],[64,236],[34,156],[24,24]] },
+    "geom_fl_3_v1": { "polygon": [[26,26],[274,36],[284,174],[254,244],[66,234],[36,154],[26,26]] },
+    "geom_fl_4_v1": { "polygon": [[28,28],[272,38],[282,172],[252,242],[68,232],[38,152],[28,28]] },
+
+    "geom_cmp_fl0_G01_v1": { "polygon": [[40,50],[70,50],[70,80],[40,80],[40,50]] },
+    "geom_cmp_fl0_G02_v1": { "polygon": [[75,50],[105,50],[105,80],[75,80],[75,50]] },
+    "geom_cmp_fl0_G03_v1": { "polygon": [[110,50],[140,50],[140,80],[110,80],[110,50]] },
+    "geom_cmp_fl0_G04_v1": { "polygon": [[145,50],[175,50],[175,80],[145,80],[145,50]] },
+    "geom_cmp_fl0_G05_v1": { "polygon": [[180,50],[210,50],[210,80],[180,80],[180,50]] },
+    "geom_cmp_fl0_G06_v1": { "polygon": [[215,50],[245,50],[245,80],[215,80],[215,50]] },
+    "geom_cmp_fl0_G07_v1": { "polygon": [[40,85],[70,85],[70,115],[40,115],[40,85]] },
+    "geom_cmp_fl0_G08_v1": { "polygon": [[75,85],[105,85],[105,115],[75,115],[75,85]] },
+    "geom_cmp_fl0_G09_v1": { "polygon": [[110,85],[140,85],[140,115],[110,115],[110,85]] },
+    "geom_cmp_fl0_G10_v1": { "polygon": [[145,85],[175,85],[175,115],[145,115],[145,85]] },
+    "geom_cmp_fl0_G11_v1": { "polygon": [[180,85],[210,85],[210,115],[180,115],[180,85]] },
+    "geom_cmp_fl0_G12_v1": { "polygon": [[215,85],[245,85],[245,115],[215,115],[215,85]] },
+    "geom_cmp_fl0_COR_v1": { "polygon": [[40,130],[250,130],[250,220],[40,220],[40,130]] },
+
+    "geom_cmp_fl1_F101_v1": { "polygon": [[42,52],[72,52],[72,80],[42,80],[42,52]] },
+    "geom_cmp_fl1_F102_v1": { "polygon": [[77,52],[107,52],[107,80],[77,80],[77,52]] },
+    "geom_cmp_fl1_F103_v1": { "polygon": [[112,52],[142,52],[142,80],[112,80],[112,52]] },
+    "geom_cmp_fl1_F104_v1": { "polygon": [[147,52],[177,52],[177,80],[147,80],[147,52]] },
+    "geom_cmp_fl1_F105_v1": { "polygon": [[182,52],[212,52],[212,80],[182,80],[182,52]] },
+    "geom_cmp_fl1_F106_v1": { "polygon": [[217,52],[247,52],[247,80],[217,80],[217,52]] },
+    "geom_cmp_fl1_F107_v1": { "polygon": [[42,85],[72,85],[72,113],[42,113],[42,85]] },
+    "geom_cmp_fl1_F108_v1": { "polygon": [[77,85],[107,85],[107,113],[77,113],[77,85]] },
+    "geom_cmp_fl1_COR_v1": { "polygon": [[112,90],[247,90],[247,220],[42,220],[42,130],[112,130],[112,90]] },
+
+    "geom_cmp_fl2_S201_v1": { "polygon": [[44,54],[74,54],[74,82],[44,82],[44,54]] },
+    "geom_cmp_fl2_S202_v1": { "polygon": [[79,54],[109,54],[109,82],[79,82],[79,54]] },
+    "geom_cmp_fl2_S203_v1": { "polygon": [[114,54],[144,54],[144,82],[114,82],[114,54]] },
+    "geom_cmp_fl2_S204_v1": { "polygon": [[149,54],[179,54],[179,82],[149,82],[149,54]] },
+    "geom_cmp_fl2_S205_v1": { "polygon": [[184,54],[214,54],[214,82],[184,82],[184,54]] },
+    "geom_cmp_fl2_S206_v1": { "polygon": [[219,54],[249,54],[249,82],[219,82],[219,54]] },
+    "geom_cmp_fl2_S207_v1": { "polygon": [[44,87],[74,87],[74,115],[44,115],[44,87]] },
+    "geom_cmp_fl2_S208_v1": { "polygon": [[79,87],[109,87],[109,115],[79,115],[79,87]] },
+    "geom_cmp_fl2_COR_v1": { "polygon": [[114,90],[249,90],[249,220],[44,220],[44,135],[114,135],[114,90]] },
+
+    "geom_cmp_fl3_O301_v1": { "polygon": [[46,56],[82,56],[82,92],[46,92],[46,56]] },
+    "geom_cmp_fl3_O302_v1": { "polygon": [[86,56],[122,56],[122,92],[86,92],[86,56]] },
+    "geom_cmp_fl3_O303_v1": { "polygon": [[126,56],[162,56],[162,92],[126,92],[126,56]] },
+    "geom_cmp_fl3_O304_v1": { "polygon": [[166,56],[202,56],[202,92],[166,92],[166,56]] },
+    "geom_cmp_fl3_O305_v1": { "polygon": [[206,56],[242,56],[242,92],[206,92],[206,56]] },
+    "geom_cmp_fl3_O306_v1": { "polygon": [[46,96],[98,96],[98,128],[46,128],[46,96]] },
+    "geom_cmp_fl3_SVC_v1": { "polygon": [[102,96],[150,96],[150,128],[102,128],[102,96]] },
+    "geom_cmp_fl3_COR_v1": { "polygon": [[46,132],[242,132],[242,220],[46,220],[46,132]] },
+
+    "geom_cmp_fl4_F401_v1": { "polygon": [[50,60],[100,60],[100,105],[50,105],[50,60]] },
+    "geom_cmp_fl4_F402_v1": { "polygon": [[105,60],[155,60],[155,105],[105,105],[105,60]] },
+    "geom_cmp_fl4_F403_v1": { "polygon": [[160,60],[210,60],[210,105],[160,105],[160,60]] },
+    "geom_cmp_fl4_F404_v1": { "polygon": [[50,110],[130,110],[130,160],[50,160],[50,110]] },
+    "geom_cmp_fl4_F405_v1": { "polygon": [[135,110],[240,110],[240,190],[135,190],[135,110]] },
+    "geom_cmp_fl4_COR_v1": { "polygon": [[50,195],[240,195],[240,220],[50,220],[50,195]] },
+
+    "geom_mask_fl0_G02_30_v1": { "polygon": [[75,50],[90,50],[90,80],[75,80],[75,50]] }
+  },
+  "documents": [
+    { "doc_id": "doc_parcel_survey_001", "type": "survey", "title": "Parcel Survey Report", "hash": "hash_parcel_001" },
+    { "doc_id": "doc_building_plan_001", "type": "plan", "title": "Approved Building Plan", "hash": "hash_bld_001" },
+    { "doc_id": "doc_fl_0_plan", "type": "plan", "title": "Ground Floor Plan", "hash": "hash_fl0_001" },
+    { "doc_id": "doc_fl_1_plan", "type": "plan", "title": "First Floor Plan", "hash": "hash_fl1_001" },
+    { "doc_id": "doc_fl_2_plan", "type": "plan", "title": "Second Floor Plan", "hash": "hash_fl2_001" },
+    { "doc_id": "doc_fl_3_plan", "type": "plan", "title": "Third Floor Plan", "hash": "hash_fl3_001" },
+    { "doc_id": "doc_fl_4_plan", "type": "plan", "title": "Fourth Floor Plan", "hash": "hash_fl4_001" },
+
+    { "doc_id": "doc_sale_G01", "type": "sale_deed", "title": "Sale Deed G-01", "hash": "hash_sale_G01" },
+    { "doc_id": "doc_sale_G02", "type": "sale_deed", "title": "Sale Deed G-02", "hash": "hash_sale_G02" },
+    { "doc_id": "doc_sale_G03", "type": "sale_deed", "title": "Sale Deed G-03", "hash": "hash_sale_G03" },
+    { "doc_id": "doc_sale_G04", "type": "sale_deed", "title": "Sale Deed G-04", "hash": "hash_sale_G04" },
+    { "doc_id": "doc_sale_G05", "type": "sale_deed", "title": "Sale Deed G-05", "hash": "hash_sale_G05" },
+    { "doc_id": "doc_sale_G06", "type": "sale_deed", "title": "Sale Deed G-06", "hash": "hash_sale_G06" },
+    { "doc_id": "doc_sale_G07", "type": "sale_deed", "title": "Sale Deed G-07", "hash": "hash_sale_G07" },
+    { "doc_id": "doc_sale_G08", "type": "sale_deed", "title": "Sale Deed G-08", "hash": "hash_sale_G08" },
+    { "doc_id": "doc_sale_G09", "type": "sale_deed", "title": "Sale Deed G-09", "hash": "hash_sale_G09" },
+    { "doc_id": "doc_sale_G10", "type": "sale_deed", "title": "Sale Deed G-10", "hash": "hash_sale_G10" },
+    { "doc_id": "doc_sale_G11", "type": "sale_deed", "title": "Sale Deed G-11", "hash": "hash_sale_G11" },
+    { "doc_id": "doc_sale_G12", "type": "sale_deed", "title": "Sale Deed G-12", "hash": "hash_sale_G12" },
+
+    { "doc_id": "doc_sale_F101", "type": "sale_deed", "title": "Sale Deed F1-101", "hash": "hash_sale_F101" },
+    { "doc_id": "doc_sale_F102", "type": "sale_deed", "title": "Sale Deed F1-102", "hash": "hash_sale_F102" },
+    { "doc_id": "doc_sale_F103", "type": "sale_deed", "title": "Sale Deed F1-103", "hash": "hash_sale_F103" },
+    { "doc_id": "doc_sale_F104", "type": "sale_deed", "title": "Sale Deed F1-104", "hash": "hash_sale_F104" },
+    { "doc_id": "doc_sale_F105", "type": "sale_deed", "title": "Sale Deed F1-105", "hash": "hash_sale_F105" },
+    { "doc_id": "doc_sale_F106", "type": "sale_deed", "title": "Sale Deed F1-106", "hash": "hash_sale_F106" },
+    { "doc_id": "doc_sale_F107", "type": "sale_deed", "title": "Sale Deed F1-107", "hash": "hash_sale_F107" },
+    { "doc_id": "doc_sale_F108", "type": "sale_deed", "title": "Sale Deed F1-108", "hash": "hash_sale_F108" },
+
+    { "doc_id": "doc_sale_S201", "type": "sale_deed", "title": "Sale Deed F2-201", "hash": "hash_sale_S201" },
+    { "doc_id": "doc_sale_S202", "type": "sale_deed", "title": "Sale Deed F2-202", "hash": "hash_sale_S202" },
+    { "doc_id": "doc_sale_S203", "type": "sale_deed", "title": "Sale Deed F2-203", "hash": "hash_sale_S203" },
+    { "doc_id": "doc_sale_S204", "type": "sale_deed", "title": "Sale Deed F2-204", "hash": "hash_sale_S204" },
+    { "doc_id": "doc_sale_S205", "type": "sale_deed", "title": "Sale Deed F2-205", "hash": "hash_sale_S205" },
+    { "doc_id": "doc_sale_S206", "type": "sale_deed", "title": "Sale Deed F2-206", "hash": "hash_sale_S206" },
+    { "doc_id": "doc_sale_S207", "type": "sale_deed", "title": "Sale Deed F2-207", "hash": "hash_sale_S207" },
+    { "doc_id": "doc_sale_S208", "type": "sale_deed", "title": "Sale Deed F2-208", "hash": "hash_sale_S208" },
+
+    { "doc_id": "doc_sale_O301", "type": "sale_deed", "title": "Sale Deed F3-301", "hash": "hash_sale_O301" },
+    { "doc_id": "doc_sale_O302", "type": "sale_deed", "title": "Sale Deed F3-302", "hash": "hash_sale_O302" },
+    { "doc_id": "doc_sale_O303", "type": "sale_deed", "title": "Sale Deed F3-303", "hash": "hash_sale_O303" },
+    { "doc_id": "doc_sale_O304", "type": "sale_deed", "title": "Sale Deed F3-304", "hash": "hash_sale_O304" },
+    { "doc_id": "doc_sale_O305", "type": "sale_deed", "title": "Sale Deed F3-305", "hash": "hash_sale_O305" },
+    { "doc_id": "doc_sale_O306", "type": "sale_deed", "title": "Sale Deed F3-306", "hash": "hash_sale_O306" },
+
+    { "doc_id": "doc_sale_F401", "type": "sale_deed", "title": "Sale Deed F4-401", "hash": "hash_sale_F401" },
+    { "doc_id": "doc_sale_F402", "type": "sale_deed", "title": "Sale Deed F4-402", "hash": "hash_sale_F402" },
+    { "doc_id": "doc_sale_F403", "type": "sale_deed", "title": "Sale Deed F4-403", "hash": "hash_sale_F403" },
+    { "doc_id": "doc_sale_F404", "type": "sale_deed", "title": "Sale Deed F4-404", "hash": "hash_sale_F404" },
+    { "doc_id": "doc_sale_F405", "type": "sale_deed", "title": "Sale Deed F4-405", "hash": "hash_sale_F405" },
+
+    { "doc_id": "doc_lease_kioskX_G02", "type": "lease", "title": "Lease KioskX in G-02 (partial)", "hash": "hash_lease_kioskX" },
+    { "doc_id": "doc_occ_pizza99_F104", "type": "occupancy", "title": "Occupancy Proof Pizza99 F1-104", "hash": "hash_occ_pizza99" },
+    { "doc_id": "doc_notice_dispute_S203", "type": "notice", "title": "Dispute Notice F2-203", "hash": "hash_dispute_S203" },
+    { "doc_id": "doc_lease_finserv_O301", "type": "lease", "title": "Lease FinServ Office F3-301", "hash": "hash_lease_finserv" }
+  ]
+}

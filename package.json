@@ -1,0 +1,12 @@
+{
+  "name": "udhbha",
+  "private": true,
+  "scripts": {
+    "dev:surveyor": "pnpm --filter @udhbha/surveyor dev",
+    "dev:auditor": "pnpm --filter @udhbha/auditor dev",
+    "dev:all": "pnpm -r --parallel dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck"
+  }
+}

@@ -1,0 +1,1950 @@
+[
+  {
+    "_id": 42964959893499,
+    "transparency_bundle": {
+      "audit_report": {
+        "audit_id": "audit_sub_demo_FINAL_1769341348",
+        "audited_at": "2026-01-25T12:05:00Z",
+        "auditor_id": "auditor@demo.gov",
+        "change_kind_detected": "BASELINE",
+        "checks": {
+          "documents": {
+            "doc_results": [
+              {
+                "comment": "Verified",
+                "doc_id": "d1",
+                "doc_name": "Deed",
+                "required": true,
+                "status": "VALID"
+              }
+            ],
+            "status": "PASS"
+          },
+          "geometry": {
+            "results": [
+              {
+                "check_id": "g1",
+                "message": "Perfect geometry",
+                "name": "All Valid",
+                "status": "PASS"
+              }
+            ],
+            "status": "PASS"
+          },
+          "rights": {
+            "results": [
+              {
+                "check_id": "r1",
+                "message": "Perfect rights",
+                "name": "All Valid",
+                "status": "PASS"
+              }
+            ],
+            "status": "PASS"
+          }
+        },
+        "decision": "PASS",
+        "fix_hints": {
+          "entities": []
+        },
+        "integrity": {
+          "audit_hash_preview": "hash1",
+          "inputs_hash_preview": "hash2"
+        },
+        "notes": {
+          "internal": "Clean record",
+          "public": "Approved for registration"
+        },
+        "parent_submission_id": null,
+        "reasons": [],
+        "submission_id": "sub_demo_FINAL_1769341348",
+        "summary": {
+          "checks_failed": 0,
+          "docs_missing": 0,
+          "docs_required": 4,
+          "docs_total": 4,
+          "rights_events": 2,
+          "topology_events": 0
+        }
+      },
+      "submission_data": {
+        "buildings": [
+          {
+            "building_id": "bld_demo_001",
+            "docs": [
+              {
+                "id": "doc_demo_plan",
+                "name": "demo_plan.pdf",
+                "type": "plan"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "footprint_geom": "geom_building",
+            "name": "Demo Building A",
+            "parcel_id": "prc_demo_001"
+          }
+        ],
+        "claims": [],
+        "components": [
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "component_id": "unit_101",
+            "docs": [
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "geom_ref": "geom_unit_101",
+            "label": "Unit 101",
+            "type": "residential"
+          },
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "component_id": "unit_102",
+            "docs": [
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "geom_ref": "geom_unit_102",
+            "label": "Unit 102",
+            "type": "residential"
+          }
+        ],
+        "documents": [
+          {
+            "doc_id": "doc_demo_sale_deed",
+            "title": "Demo Sale Deed",
+            "type": "sale_deed"
+          },
+          {
+            "doc_id": "doc_demo_survey",
+            "title": "Demo Survey Report",
+            "type": "survey"
+          },
+          {
+            "doc_id": "doc_demo_plan",
+            "title": "Demo Building Plan",
+            "type": "plan"
+          },
+          {
+            "doc_id": "doc_demo_general",
+            "title": "Demo General Document",
+            "type": "other"
+          }
+        ],
+        "documents_index": {
+          "doc_demo_general": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_general",
+            "id": "doc_demo_general",
+            "mime": "application/pdf",
+            "name": "demo_doc.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_doc.pdf"
+            },
+            "type": "other"
+          },
+          "doc_demo_plan": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_plan",
+            "id": "doc_demo_plan",
+            "mime": "application/pdf",
+            "name": "demo_plan.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_plan.pdf"
+            },
+            "type": "plan"
+          },
+          "doc_demo_sale_deed": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_sale_deed",
+            "id": "doc_demo_sale_deed",
+            "mime": "application/pdf",
+            "name": "demo_sale_deed.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_sale_deed.pdf"
+            },
+            "type": "sale_deed"
+          },
+          "doc_demo_survey": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_survey",
+            "id": "doc_demo_survey",
+            "mime": "application/pdf",
+            "name": "demo_survey.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_survey.pdf"
+            },
+            "type": "survey"
+          }
+        },
+        "floors": [
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "building_id": "bld_demo_001",
+            "docs": [
+              {
+                "id": "doc_demo_plan",
+                "name": "demo_plan.pdf",
+                "type": "plan"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "label": "Ground Floor",
+            "level": 0,
+            "outline_geom": "geom_floor_ground"
+          }
+        ],
+        "geometry_store": {
+          "geom_building": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_floor_ground": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_parcel": {
+            "polygon": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                0
+              ],
+              [
+                100,
+                80
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "geom_unit_101": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                50,
+                10
+              ],
+              [
+                50,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_unit_102": {
+            "polygon": [
+              [
+                50,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                50,
+                70
+              ],
+              [
+                50,
+                10
+              ]
+            ]
+          }
+        },
+        "meta": {
+          "change_kind": "BASELINE",
+          "change_note": "Initial property registration - Perfect demo",
+          "created_at": "2026-01-25T12:00:00Z",
+          "created_by": "surveyor@demo.gov",
+          "locked": true,
+          "parent_submission_id": null,
+          "revision_number": 1,
+          "schema_version": "v1",
+          "status": "AUDIT_PASSED",
+          "submission_id": "sub_demo_FINAL_1769341348",
+          "updated_at": "2026-01-25T00:00:00.000Z"
+        },
+        "parcel": {
+          "anchors": [
+            {
+              "id": "A1",
+              "local_xy": [
+                0,
+                0
+              ],
+              "wgs84": [
+                23.0225,
+                72.5712
+              ]
+            },
+            {
+              "id": "A2",
+              "local_xy": [
+                100,
+                0
+              ],
+              "wgs84": [
+                23.0228,
+                72.5721
+              ]
+            },
+            {
+              "id": "A3",
+              "local_xy": [
+                0,
+                80
+              ],
+              "wgs84": [
+                23.0222,
+                72.5718
+              ]
+            }
+          ],
+          "boundary_geom": "geom_parcel",
+          "docs": [
+            {
+              "id": "doc_demo_survey",
+              "name": "demo_survey.pdf",
+              "type": "survey"
+            },
+            {
+              "id": "doc_demo_general",
+              "name": "demo_doc.pdf",
+              "type": "other"
+            }
+          ],
+          "name": "Demo Property - Simple 2-Unit Building",
+          "parcel_id": "prc_demo_001",
+          "ref_frame": {
+            "type": "local_planar",
+            "units": "m"
+          }
+        },
+        "rights_events": [
+          {
+            "created_at": "2026-01-25T00:00:00.000Z",
+            "created_by": "surveyor@demo.gov",
+            "docs": [
+              {
+                "id": "doc_demo_sale_deed",
+                "name": "demo_sale_deed.pdf",
+                "type": "sale_deed"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "event_id": "evt_ownership_101",
+            "kind": "ADD_OWNERSHIP",
+            "origin": "APPROVED_BASELINE",
+            "payload": {
+              "holder": "did:user:alice",
+              "share": 1.0
+            },
+            "target": {
+              "id": "unit_101",
+              "level": "UNIT"
+            },
+            "ts": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "created_at": "2026-01-25T00:00:00.000Z",
+            "created_by": "surveyor@demo.gov",
+            "docs": [
+              {
+                "id": "doc_demo_sale_deed",
+                "name": "demo_sale_deed.pdf",
+                "type": "sale_deed"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "event_id": "evt_ownership_102",
+            "kind": "ADD_OWNERSHIP",
+            "origin": "APPROVED_BASELINE",
+            "payload": {
+              "holder": "did:user:bob",
+              "share": 1.0
+            },
+            "target": {
+              "id": "unit_102",
+              "level": "UNIT"
+            },
+            "ts": "2026-01-01T00:00:00.000Z"
+          }
+        ],
+        "topology_events": []
+      },
+      "submission_id": "sub_demo_FINAL_1769341348"
+    }
+  },
+  {
+    "_id": 120470625810442,
+    "transparency_bundle": {
+      "audit_report": {
+        "audit_id": "audit_sub_demo_FINAL_1769341405",
+        "audited_at": "2026-01-25T12:05:00Z",
+        "auditor_id": "auditor@demo.gov",
+        "change_kind_detected": "BASELINE",
+        "checks": {
+          "documents": {
+            "doc_results": [
+              {
+                "comment": "Verified",
+                "doc_id": "d1",
+                "doc_name": "Deed",
+                "required": true,
+                "status": "VALID"
+              }
+            ],
+            "status": "PASS"
+          },
+          "geometry": {
+            "results": [
+              {
+                "check_id": "g1",
+                "message": "Perfect geometry",
+                "name": "All Valid",
+                "status": "PASS"
+              }
+            ],
+            "status": "PASS"
+          },
+          "rights": {
+            "results": [
+              {
+                "check_id": "r1",
+                "message": "Perfect rights",
+                "name": "All Valid",
+                "status": "PASS"
+              }
+            ],
+            "status": "PASS"
+          }
+        },
+        "decision": "PASS",
+        "fix_hints": {
+          "entities": []
+        },
+        "integrity": {
+          "audit_hash_preview": "hash1",
+          "inputs_hash_preview": "hash2"
+        },
+        "notes": {
+          "internal": "Clean record",
+          "public": "Approved for registration"
+        },
+        "parent_submission_id": null,
+        "reasons": [],
+        "submission_id": "sub_demo_FINAL_1769341405",
+        "summary": {
+          "checks_failed": 0,
+          "docs_missing": 0,
+          "docs_required": 4,
+          "docs_total": 4,
+          "rights_events": 2,
+          "topology_events": 0
+        }
+      },
+      "submission_data": {
+        "buildings": [
+          {
+            "building_id": "bld_demo_001",
+            "docs": [
+              {
+                "id": "doc_demo_plan",
+                "name": "demo_plan.pdf",
+                "type": "plan"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "footprint_geom": "geom_building",
+            "name": "Demo Building A",
+            "parcel_id": "prc_demo_001"
+          }
+        ],
+        "claims": [],
+        "components": [
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "component_id": "unit_101",
+            "docs": [
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "geom_ref": "geom_unit_101",
+            "label": "Unit 101",
+            "type": "residential"
+          },
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "component_id": "unit_102",
+            "docs": [
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "geom_ref": "geom_unit_102",
+            "label": "Unit 102",
+            "type": "residential"
+          }
+        ],
+        "documents": [
+          {
+            "doc_id": "doc_demo_sale_deed",
+            "title": "Demo Sale Deed",
+            "type": "sale_deed"
+          },
+          {
+            "doc_id": "doc_demo_survey",
+            "title": "Demo Survey Report",
+            "type": "survey"
+          },
+          {
+            "doc_id": "doc_demo_plan",
+            "title": "Demo Building Plan",
+            "type": "plan"
+          },
+          {
+            "doc_id": "doc_demo_general",
+            "title": "Demo General Document",
+            "type": "other"
+          }
+        ],
+        "documents_index": {
+          "doc_demo_general": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_general",
+            "id": "doc_demo_general",
+            "mime": "application/pdf",
+            "name": "demo_doc.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_doc.pdf"
+            },
+            "type": "other"
+          },
+          "doc_demo_plan": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_plan",
+            "id": "doc_demo_plan",
+            "mime": "application/pdf",
+            "name": "demo_plan.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_plan.pdf"
+            },
+            "type": "plan"
+          },
+          "doc_demo_sale_deed": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_sale_deed",
+            "id": "doc_demo_sale_deed",
+            "mime": "application/pdf",
+            "name": "demo_sale_deed.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_sale_deed.pdf"
+            },
+            "type": "sale_deed"
+          },
+          "doc_demo_survey": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_survey",
+            "id": "doc_demo_survey",
+            "mime": "application/pdf",
+            "name": "demo_survey.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_survey.pdf"
+            },
+            "type": "survey"
+          }
+        },
+        "floors": [
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "building_id": "bld_demo_001",
+            "docs": [
+              {
+                "id": "doc_demo_plan",
+                "name": "demo_plan.pdf",
+                "type": "plan"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "label": "Ground Floor",
+            "level": 0,
+            "outline_geom": "geom_floor_ground"
+          }
+        ],
+        "geometry_store": {
+          "geom_building": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_floor_ground": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_parcel": {
+            "polygon": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                0
+              ],
+              [
+                100,
+                80
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "geom_unit_101": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                50,
+                10
+              ],
+              [
+                50,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_unit_102": {
+            "polygon": [
+              [
+                50,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                50,
+                70
+              ],
+              [
+                50,
+                10
+              ]
+            ]
+          }
+        },
+        "meta": {
+          "change_kind": "BASELINE",
+          "change_note": "Initial property registration - Perfect demo",
+          "created_at": "2026-01-25T12:00:00Z",
+          "created_by": "surveyor@demo.gov",
+          "locked": true,
+          "parent_submission_id": null,
+          "revision_number": 1,
+          "schema_version": "v1",
+          "status": "AUDIT_PASSED",
+          "submission_id": "sub_demo_FINAL_1769341405",
+          "updated_at": "2026-01-25T00:00:00.000Z"
+        },
+        "parcel": {
+          "anchors": [
+            {
+              "id": "A1",
+              "local_xy": [
+                0,
+                0
+              ],
+              "wgs84": [
+                23.0225,
+                72.5712
+              ]
+            },
+            {
+              "id": "A2",
+              "local_xy": [
+                100,
+                0
+              ],
+              "wgs84": [
+                23.0228,
+                72.5721
+              ]
+            },
+            {
+              "id": "A3",
+              "local_xy": [
+                0,
+                80
+              ],
+              "wgs84": [
+                23.0222,
+                72.5718
+              ]
+            }
+          ],
+          "boundary_geom": "geom_parcel",
+          "docs": [
+            {
+              "id": "doc_demo_survey",
+              "name": "demo_survey.pdf",
+              "type": "survey"
+            },
+            {
+              "id": "doc_demo_general",
+              "name": "demo_doc.pdf",
+              "type": "other"
+            }
+          ],
+          "name": "Demo Property - Simple 2-Unit Building",
+          "parcel_id": "prc_demo_001",
+          "ref_frame": {
+            "type": "local_planar",
+            "units": "m"
+          }
+        },
+        "rights_events": [
+          {
+            "created_at": "2026-01-25T00:00:00.000Z",
+            "created_by": "surveyor@demo.gov",
+            "docs": [
+              {
+                "id": "doc_demo_sale_deed",
+                "name": "demo_sale_deed.pdf",
+                "type": "sale_deed"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "event_id": "evt_ownership_101",
+            "kind": "ADD_OWNERSHIP",
+            "origin": "APPROVED_BASELINE",
+            "payload": {
+              "holder": "did:user:alice",
+              "share": 1.0
+            },
+            "target": {
+              "id": "unit_101",
+              "level": "UNIT"
+            },
+            "ts": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "created_at": "2026-01-25T00:00:00.000Z",
+            "created_by": "surveyor@demo.gov",
+            "docs": [
+              {
+                "id": "doc_demo_sale_deed",
+                "name": "demo_sale_deed.pdf",
+                "type": "sale_deed"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "event_id": "evt_ownership_102",
+            "kind": "ADD_OWNERSHIP",
+            "origin": "APPROVED_BASELINE",
+            "payload": {
+              "holder": "did:user:bob",
+              "share": 1.0
+            },
+            "target": {
+              "id": "unit_102",
+              "level": "UNIT"
+            },
+            "ts": "2026-01-01T00:00:00.000Z"
+          }
+        ],
+        "topology_events": []
+      },
+      "submission_id": "sub_demo_FINAL_1769341405"
+    }
+  },
+  {
+    "_id": 268894274549086,
+    "transparency_bundle": {
+      "audit_report": {
+        "audit_id": "audit_sub_demo_FINAL_1769341812",
+        "audited_at": "2026-01-25T12:05:00Z",
+        "auditor_id": "auditor@demo.gov",
+        "change_kind_detected": "BASELINE",
+        "checks": {
+          "documents": {
+            "doc_results": [
+              {
+                "comment": "Verified",
+                "doc_id": "d1",
+                "doc_name": "Deed",
+                "required": true,
+                "status": "VALID"
+              }
+            ],
+            "status": "PASS"
+          },
+          "geometry": {
+            "results": [
+              {
+                "check_id": "g1",
+                "message": "Perfect geometry",
+                "name": "All Valid",
+                "status": "PASS"
+              }
+            ],
+            "status": "PASS"
+          },
+          "rights": {
+            "results": [
+              {
+                "check_id": "r1",
+                "message": "Perfect rights",
+                "name": "All Valid",
+                "status": "PASS"
+              }
+            ],
+            "status": "PASS"
+          }
+        },
+        "decision": "PASS",
+        "fix_hints": {
+          "entities": []
+        },
+        "integrity": {
+          "audit_hash_preview": "hash1",
+          "inputs_hash_preview": "hash2"
+        },
+        "notes": {
+          "internal": "Clean record",
+          "public": "Approved for registration"
+        },
+        "parent_submission_id": null,
+        "reasons": [],
+        "submission_id": "sub_demo_FINAL_1769341812",
+        "summary": {
+          "checks_failed": 0,
+          "docs_missing": 0,
+          "docs_required": 4,
+          "docs_total": 4,
+          "rights_events": 2,
+          "topology_events": 0
+        }
+      },
+      "submission_data": {
+        "buildings": [
+          {
+            "building_id": "bld_demo_001",
+            "docs": [
+              {
+                "id": "doc_demo_plan",
+                "name": "demo_plan.pdf",
+                "type": "plan"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "footprint_geom": "geom_building",
+            "name": "Demo Building A",
+            "parcel_id": "prc_demo_001"
+          }
+        ],
+        "claims": [],
+        "components": [
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "component_id": "unit_101",
+            "docs": [
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "geom_ref": "geom_unit_101",
+            "label": "Unit 101",
+            "type": "residential"
+          },
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "component_id": "unit_102",
+            "docs": [
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "geom_ref": "geom_unit_102",
+            "label": "Unit 102",
+            "type": "residential"
+          }
+        ],
+        "documents": [
+          {
+            "doc_id": "doc_demo_sale_deed",
+            "title": "Demo Sale Deed",
+            "type": "sale_deed"
+          },
+          {
+            "doc_id": "doc_demo_survey",
+            "title": "Demo Survey Report",
+            "type": "survey"
+          },
+          {
+            "doc_id": "doc_demo_plan",
+            "title": "Demo Building Plan",
+            "type": "plan"
+          },
+          {
+            "doc_id": "doc_demo_general",
+            "title": "Demo General Document",
+            "type": "other"
+          }
+        ],
+        "documents_index": {
+          "doc_demo_general": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_general",
+            "id": "doc_demo_general",
+            "mime": "application/pdf",
+            "name": "demo_doc.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_doc.pdf"
+            },
+            "type": "other"
+          },
+          "doc_demo_plan": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_plan",
+            "id": "doc_demo_plan",
+            "mime": "application/pdf",
+            "name": "demo_plan.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_plan.pdf"
+            },
+            "type": "plan"
+          },
+          "doc_demo_sale_deed": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_sale_deed",
+            "id": "doc_demo_sale_deed",
+            "mime": "application/pdf",
+            "name": "demo_sale_deed.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_sale_deed.pdf"
+            },
+            "type": "sale_deed"
+          },
+          "doc_demo_survey": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_survey",
+            "id": "doc_demo_survey",
+            "mime": "application/pdf",
+            "name": "demo_survey.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_survey.pdf"
+            },
+            "type": "survey"
+          }
+        },
+        "floors": [
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "building_id": "bld_demo_001",
+            "docs": [
+              {
+                "id": "doc_demo_plan",
+                "name": "demo_plan.pdf",
+                "type": "plan"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "label": "Ground Floor",
+            "level": 0,
+            "outline_geom": "geom_floor_ground"
+          }
+        ],
+        "geometry_store": {
+          "geom_building": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_floor_ground": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_parcel": {
+            "polygon": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                0
+              ],
+              [
+                100,
+                80
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "geom_unit_101": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                50,
+                10
+              ],
+              [
+                50,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_unit_102": {
+            "polygon": [
+              [
+                50,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                50,
+                70
+              ],
+              [
+                50,
+                10
+              ]
+            ]
+          }
+        },
+        "meta": {
+          "change_kind": "BASELINE",
+          "change_note": "Initial property registration - Perfect demo",
+          "created_at": "2026-01-25T12:00:00Z",
+          "created_by": "surveyor@demo.gov",
+          "locked": true,
+          "parent_submission_id": null,
+          "revision_number": 1,
+          "schema_version": "v1",
+          "status": "AUDIT_PASSED",
+          "submission_id": "sub_demo_FINAL_1769341812",
+          "updated_at": "2026-01-25T00:00:00.000Z"
+        },
+        "parcel": {
+          "anchors": [
+            {
+              "id": "A1",
+              "local_xy": [
+                0,
+                0
+              ],
+              "wgs84": [
+                23.0225,
+                72.5712
+              ]
+            },
+            {
+              "id": "A2",
+              "local_xy": [
+                100,
+                0
+              ],
+              "wgs84": [
+                23.0228,
+                72.5721
+              ]
+            },
+            {
+              "id": "A3",
+              "local_xy": [
+                0,
+                80
+              ],
+              "wgs84": [
+                23.0222,
+                72.5718
+              ]
+            }
+          ],
+          "boundary_geom": "geom_parcel",
+          "docs": [
+            {
+              "id": "doc_demo_survey",
+              "name": "demo_survey.pdf",
+              "type": "survey"
+            },
+            {
+              "id": "doc_demo_general",
+              "name": "demo_doc.pdf",
+              "type": "other"
+            }
+          ],
+          "name": "Demo Property - Simple 2-Unit Building",
+          "parcel_id": "prc_demo_001",
+          "ref_frame": {
+            "type": "local_planar",
+            "units": "m"
+          }
+        },
+        "rights_events": [
+          {
+            "created_at": "2026-01-25T00:00:00.000Z",
+            "created_by": "surveyor@demo.gov",
+            "docs": [
+              {
+                "id": "doc_demo_sale_deed",
+                "name": "demo_sale_deed.pdf",
+                "type": "sale_deed"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "event_id": "evt_ownership_101",
+            "kind": "ADD_OWNERSHIP",
+            "origin": "APPROVED_BASELINE",
+            "payload": {
+              "holder": "did:user:alice",
+              "share": 1.0
+            },
+            "target": {
+              "id": "unit_101",
+              "level": "UNIT"
+            },
+            "ts": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "created_at": "2026-01-25T00:00:00.000Z",
+            "created_by": "surveyor@demo.gov",
+            "docs": [
+              {
+                "id": "doc_demo_sale_deed",
+                "name": "demo_sale_deed.pdf",
+                "type": "sale_deed"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "event_id": "evt_ownership_102",
+            "kind": "ADD_OWNERSHIP",
+            "origin": "APPROVED_BASELINE",
+            "payload": {
+              "holder": "did:user:bob",
+              "share": 1.0
+            },
+            "target": {
+              "id": "unit_102",
+              "level": "UNIT"
+            },
+            "ts": "2026-01-01T00:00:00.000Z"
+          }
+        ],
+        "topology_events": []
+      },
+      "submission_id": "sub_demo_FINAL_1769341812"
+    }
+  },
+  {
+    "_id": 5148664188648,
+    "transparency_bundle": {
+      "audit_report": {
+        "audit_id": "audit_sub_1769341839650",
+        "audited_at": "2026-01-25T12:05:00Z",
+        "auditor_id": "auditor@demo.gov",
+        "change_kind_detected": "BASELINE",
+        "checks": {
+          "documents": {
+            "doc_results": [
+              {
+                "comment": "Verified",
+                "doc_id": "d1",
+                "doc_name": "Deed",
+                "required": true,
+                "status": "VALID"
+              }
+            ],
+            "status": "PASS"
+          },
+          "geometry": {
+            "results": [
+              {
+                "check_id": "g1",
+                "message": "Perfect geometry",
+                "name": "All Valid",
+                "status": "PASS"
+              }
+            ],
+            "status": "PASS"
+          },
+          "rights": {
+            "results": [
+              {
+                "check_id": "r1",
+                "message": "Perfect rights",
+                "name": "All Valid",
+                "status": "PASS"
+              }
+            ],
+            "status": "PASS"
+          }
+        },
+        "decision": "PASS",
+        "fix_hints": {
+          "entities": []
+        },
+        "integrity": {
+          "audit_hash_preview": "hash1",
+          "inputs_hash_preview": "hash2"
+        },
+        "notes": {
+          "internal": "Clean record",
+          "public": "Approved for registration"
+        },
+        "parent_submission_id": null,
+        "reasons": [],
+        "submission_id": "sub_1769341839650",
+        "summary": {
+          "checks_failed": 0,
+          "docs_missing": 0,
+          "docs_required": 4,
+          "docs_total": 4,
+          "rights_events": 2,
+          "topology_events": 0
+        }
+      },
+      "submission_data": {
+        "buildings": [
+          {
+            "building_id": "bld_demo_001",
+            "docs": [
+              {
+                "id": "doc_demo_plan",
+                "name": "demo_plan.pdf",
+                "type": "plan"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "footprint_geom": "geom_building",
+            "name": "Demo Building A",
+            "parcel_id": "prc_demo_001"
+          }
+        ],
+        "claims": [],
+        "components": [
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "component_id": "unit_101",
+            "docs": [
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "geom_ref": "geom_unit_101",
+            "label": "Unit 101",
+            "type": "residential"
+          },
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "component_id": "unit_102",
+            "docs": [
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "geom_ref": "geom_unit_102",
+            "label": "Unit 102",
+            "type": "residential"
+          }
+        ],
+        "documents": [
+          {
+            "doc_id": "doc_demo_sale_deed",
+            "title": "Demo Sale Deed",
+            "type": "sale_deed"
+          },
+          {
+            "doc_id": "doc_demo_survey",
+            "title": "Demo Survey Report",
+            "type": "survey"
+          },
+          {
+            "doc_id": "doc_demo_plan",
+            "title": "Demo Building Plan",
+            "type": "plan"
+          },
+          {
+            "doc_id": "doc_demo_general",
+            "title": "Demo General Document",
+            "type": "other"
+          }
+        ],
+        "documents_index": {
+          "doc_demo_general": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_general",
+            "id": "doc_demo_general",
+            "mime": "application/pdf",
+            "name": "demo_doc.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_doc.pdf"
+            },
+            "type": "other"
+          },
+          "doc_demo_plan": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_plan",
+            "id": "doc_demo_plan",
+            "mime": "application/pdf",
+            "name": "demo_plan.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_plan.pdf"
+            },
+            "type": "plan"
+          },
+          "doc_demo_sale_deed": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_sale_deed",
+            "id": "doc_demo_sale_deed",
+            "mime": "application/pdf",
+            "name": "demo_sale_deed.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_sale_deed.pdf"
+            },
+            "type": "sale_deed"
+          },
+          "doc_demo_survey": {
+            "created_at": "2026-01-25T00:00:00Z",
+            "created_by": "surveyor@demo.gov",
+            "hash": "sha256_mock_hash_survey",
+            "id": "doc_demo_survey",
+            "mime": "application/pdf",
+            "name": "demo_survey.pdf",
+            "size": 1024000,
+            "storage": {
+              "provider": "S3",
+              "ref": "hackathon/demo_survey.pdf"
+            },
+            "type": "survey"
+          }
+        },
+        "floors": [
+          {
+            "active": {
+              "from": "2026-01-01",
+              "to": null
+            },
+            "building_id": "bld_demo_001",
+            "docs": [
+              {
+                "id": "doc_demo_plan",
+                "name": "demo_plan.pdf",
+                "type": "plan"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "floor_id": "fl_ground",
+            "label": "Ground Floor",
+            "level": 0,
+            "outline_geom": "geom_floor_ground"
+          }
+        ],
+        "geometry_store": {
+          "geom_building": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_floor_ground": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_parcel": {
+            "polygon": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                0
+              ],
+              [
+                100,
+                80
+              ],
+              [
+                0,
+                80
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "geom_unit_101": {
+            "polygon": [
+              [
+                10,
+                10
+              ],
+              [
+                50,
+                10
+              ],
+              [
+                50,
+                70
+              ],
+              [
+                10,
+                70
+              ],
+              [
+                10,
+                10
+              ]
+            ]
+          },
+          "geom_unit_102": {
+            "polygon": [
+              [
+                50,
+                10
+              ],
+              [
+                90,
+                10
+              ],
+              [
+                90,
+                70
+              ],
+              [
+                50,
+                70
+              ],
+              [
+                50,
+                10
+              ]
+            ]
+          }
+        },
+        "meta": {
+          "change_kind": "BASELINE",
+          "change_note": "Initial property registration - Perfect demo",
+          "created_at": "2026-01-25T12:00:00Z",
+          "created_by": "surveyor@demo.gov",
+          "locked": true,
+          "parent_submission_id": null,
+          "revision_number": 1,
+          "schema_version": "v1",
+          "status": "AUDIT_PASSED",
+          "submission_id": "sub_1769341839650",
+          "updated_at": "2026-01-25T00:00:00.000Z"
+        },
+        "parcel": {
+          "anchors": [
+            {
+              "id": "A1",
+              "local_xy": [
+                0,
+                0
+              ],
+              "wgs84": [
+                23.0225,
+                72.5712
+              ]
+            },
+            {
+              "id": "A2",
+              "local_xy": [
+                100,
+                0
+              ],
+              "wgs84": [
+                23.0228,
+                72.5721
+              ]
+            },
+            {
+              "id": "A3",
+              "local_xy": [
+                0,
+                80
+              ],
+              "wgs84": [
+                23.0222,
+                72.5718
+              ]
+            }
+          ],
+          "boundary_geom": "geom_parcel",
+          "docs": [
+            {
+              "id": "doc_demo_survey",
+              "name": "demo_survey.pdf",
+              "type": "survey"
+            },
+            {
+              "id": "doc_demo_general",
+              "name": "demo_doc.pdf",
+              "type": "other"
+            }
+          ],
+          "name": "Demo Property - Simple 2-Unit Building",
+          "parcel_id": "prc_demo_001",
+          "ref_frame": {
+            "type": "local_planar",
+            "units": "m"
+          }
+        },
+        "rights_events": [
+          {
+            "created_at": "2026-01-25T00:00:00.000Z",
+            "created_by": "surveyor@demo.gov",
+            "docs": [
+              {
+                "id": "doc_demo_sale_deed",
+                "name": "demo_sale_deed.pdf",
+                "type": "sale_deed"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "event_id": "evt_ownership_101",
+            "kind": "ADD_OWNERSHIP",
+            "origin": "APPROVED_BASELINE",
+            "payload": {
+              "holder": "did:user:alice",
+              "share": 1.0
+            },
+            "target": {
+              "id": "unit_101",
+              "level": "UNIT"
+            },
+            "ts": "2026-01-01T00:00:00.000Z"
+          },
+          {
+            "created_at": "2026-01-25T00:00:00.000Z",
+            "created_by": "surveyor@demo.gov",
+            "docs": [
+              {
+                "id": "doc_demo_sale_deed",
+                "name": "demo_sale_deed.pdf",
+                "type": "sale_deed"
+              },
+              {
+                "id": "doc_demo_general",
+                "name": "demo_doc.pdf",
+                "type": "other"
+              }
+            ],
+            "event_id": "evt_ownership_102",
+            "kind": "ADD_OWNERSHIP",
+            "origin": "APPROVED_BASELINE",
+            "payload": {
+              "holder": "did:user:bob",
+              "share": 1.0
+            },
+            "target": {
+              "id": "unit_102",
+              "level": "UNIT"
+            },
+            "ts": "2026-01-01T00:00:00.000Z"
+          }
+        ],
+        "topology_events": []
+      },
+      "submission_id": "sub_1769341839650"
+    }
+  }
+]

@@ -1,0 +1,429 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Government-grade Auditor Panel Design System
+   Strict black/white monochrome with status color accents
+   Matches Surveyor Panel for consistency */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    /* Core monochrome palette */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 0%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+    
+    --muted: 0 0% 92%;
+    --muted-foreground: 0 0% 40%;
+    
+    --accent: 0 0% 90%;
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 50%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --success: 145 60% 42%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 88% 52%;
+    --warning-foreground: 0 0% 0%;
+    
+    --info: 203 70% 52%;
+    --info-foreground: 0 0% 100%;
+    
+    --border: 0 0% 80%;
+    --input: 0 0% 85%;
+    --ring: 0 0% 0%;
+    
+    --radius: 0.25rem;
+    
+    /* Status colors - matches colorSystem.ts */
+    --status-draft: 0 0% 63%;
+    --status-submitted: 203 70% 52%;
+    --status-approved: 145 60% 42%;
+    --status-rejected: 0 79% 63%;
+    --status-returned: 45 88% 62%;
+    --status-error: 0 79% 63%;
+    
+    /* Audit-specific tokens */
+    --audit-pass: 145 60% 42%;
+    --audit-fail: 0 79% 63%;
+    --audit-warn: 45 88% 52%;
+    --audit-pending: 0 0% 63%;
+    --audit-returned: 45 88% 52%;
+    
+    /* Claim kind colors */
+    --claim-ownership: 29 100% 50%;
+    --claim-lease: 50 100% 50%;
+    --claim-occupancy: 178 100% 40%;
+    --claim-dispute: 6 79% 57%;
+    
+    /* Panel structure */
+    --panel-border: 0 0% 75%;
+    --panel-header: 0 0% 95%;
+    --panel-divider: 0 0% 85%;
+    
+    /* Hierarchy tree */
+    --tree-hover: 0 0% 95%;
+    --tree-selected: 0 0% 90%;
+    --tree-active: 0 0% 0%;
+    
+    /* Validation */
+    --error-bg: 0 100% 97%;
+    --error-border: 0 100% 70%;
+    --warning-bg: 45 100% 97%;
+    --warning-border: 45 100% 70%;
+    
+    /* 3D Viewer */
+    --viewer-bg: 0 0% 12%;
+    --viewer-grid: 0 0% 25%;
+    
+    /* Sidebar specific */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 0 0% 0%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 94%;
+    --sidebar-accent-foreground: 0 0% 0%;
+    --sidebar-border: 0 0% 80%;
+    --sidebar-ring: 0 0% 0%;
+    --sidebar-muted: 0 0% 40%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+    
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+    
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+    
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 60%;
+    
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --success: 145 60% 50%;
+    --success-foreground: 0 0% 100%;
+    
+    --warning: 45 88% 55%;
+    --warning-foreground: 0 0% 0%;
+    
+    --border: 0 0% 25%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 100%;
+    
+    --panel-border: 0 0% 30%;
+    --panel-header: 0 0% 12%;
+    --panel-divider: 0 0% 20%;
+    
+    --tree-hover: 0 0% 15%;
+    --tree-selected: 0 0% 20%;
+    --tree-active: 0 0% 100%;
+    
+    --error-bg: 0 100% 10%;
+    --error-border: 0 100% 40%;
+    --warning-bg: 45 100% 10%;
+    --warning-border: 45 100% 40%;
+    
+    --viewer-bg: 0 0% 8%;
+    --viewer-grid: 0 0% 20%;
+    
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 0 0% 0%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 0 0% 100%;
+    --sidebar-muted: 0 0% 55%;
+    
+    --audit-pass: 145 60% 50%;
+    --audit-fail: 0 79% 55%;
+    --audit-warn: 45 88% 55%;
+    --audit-pending: 0 0% 55%;
+    --audit-returned: 45 88% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  }
+}
+
+@layer components {
+  /* Government-style header */
+  .gov-header {
+    @apply h-14 px-4 flex items-center border-b border-border bg-card sticky top-0 z-50;
+  }
+  
+  .gov-title {
+    @apply text-sm font-semibold tracking-wide;
+  }
+
+  /* Panel structure */
+  .panel {
+    @apply border border-[hsl(var(--panel-border))] bg-card;
+  }
+  
+  .panel-header {
+    @apply bg-[hsl(var(--panel-header))] border-b border-[hsl(var(--panel-border))] px-3 py-2 font-semibold text-sm uppercase tracking-wide;
+  }
+  
+  .panel-content {
+    @apply p-3;
+  }
+  
+  /* Form labels */
+  .form-label {
+    @apply text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1 block;
+  }
+  
+  /* Tree styles */
+  .tree-node {
+    @apply flex items-center gap-2 px-2 py-1.5 cursor-pointer text-sm transition-colors;
+  }
+  
+  .tree-node:hover {
+    @apply bg-[hsl(var(--tree-hover))];
+  }
+  
+  .tree-node.selected {
+    @apply bg-[hsl(var(--tree-selected))] font-medium;
+  }
+  
+  .tree-node.active {
+    @apply border-l-2 border-[hsl(var(--tree-active))];
+  }
+
+  /* Status badges */
+  .status-badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded text-xs font-semibold uppercase tracking-wide;
+  }
+
+  .status-draft {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  .status-submitted {
+    @apply text-white;
+    background-color: hsl(var(--status-submitted));
+  }
+
+  .status-returned {
+    @apply text-white;
+    background-color: hsl(var(--status-returned));
+  }
+
+  .status-approved {
+    @apply text-white;
+    background-color: hsl(var(--status-approved));
+  }
+
+  .status-error {
+    @apply text-white;
+    background-color: hsl(var(--status-error));
+  }
+
+  /* Audit status badges */
+  .status-pass {
+    @apply text-white;
+    background-color: hsl(var(--audit-pass));
+  }
+
+  .status-fail {
+    @apply text-white;
+    background-color: hsl(var(--audit-fail));
+  }
+
+  .status-warn {
+    @apply text-black;
+    background-color: hsl(var(--audit-warn));
+  }
+
+  .status-pending {
+    @apply bg-muted text-muted-foreground;
+  }
+  
+  /* Validation badges */
+  .error-badge {
+    @apply bg-[hsl(var(--error-bg))] border border-[hsl(var(--error-border))] text-destructive text-xs px-1.5 py-0.5 rounded;
+  }
+  
+  .warning-badge {
+    @apply bg-[hsl(var(--warning-bg))] border border-[hsl(var(--warning-border))] text-[hsl(30,100%,30%)] text-xs px-1.5 py-0.5 rounded;
+  }
+  
+  /* Tab styles */
+  .gov-tab {
+    @apply px-4 py-2 text-sm font-semibold uppercase tracking-wider border-b-2 border-transparent transition-colors;
+  }
+  
+  .gov-tab:hover {
+    @apply bg-secondary;
+  }
+  
+  .gov-tab.active {
+    @apply border-foreground bg-background;
+  }
+  
+  /* Toolbar buttons */
+  .toolbar-btn {
+    @apply px-3 py-1.5 text-xs font-semibold uppercase tracking-wide border border-border bg-background hover:bg-secondary transition-colors rounded;
+  }
+  
+  .toolbar-btn.primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  
+  .toolbar-btn.danger {
+    @apply border-destructive text-destructive hover:bg-destructive hover:text-destructive-foreground;
+  }
+
+  .toolbar-btn.success {
+    @apply border-[hsl(var(--success))] text-[hsl(var(--success))] hover:bg-[hsl(var(--success))] hover:text-white;
+  }
+  
+  /* Data table styles */
+  .data-table {
+    @apply w-full text-sm;
+  }
+  
+  .data-table th {
+    @apply text-left px-2 py-1.5 bg-[hsl(var(--panel-header))] border-b border-[hsl(var(--panel-border))] font-semibold text-xs uppercase tracking-wide;
+  }
+  
+  .data-table td {
+    @apply px-2 py-1.5 border-b border-[hsl(var(--panel-divider))] font-mono text-xs;
+  }
+  
+  .data-table tr:hover td {
+    @apply bg-[hsl(var(--tree-hover))];
+  }
+  
+  /* Input styles */
+  .gov-input {
+    @apply w-full px-2 py-1.5 text-sm border border-input bg-background font-mono focus:outline-none focus:ring-1 focus:ring-ring;
+  }
+  
+  .gov-textarea {
+    @apply w-full px-2 py-1.5 text-sm border border-input bg-background font-mono focus:outline-none focus:ring-1 focus:ring-ring resize-none;
+  }
+  
+  .gov-select {
+    @apply w-full px-2 py-1.5 text-sm border border-input bg-background focus:outline-none focus:ring-1 focus:ring-ring;
+  }
+  
+  /* 3D Viewer container */
+  .viewer-container {
+    @apply bg-[hsl(var(--viewer-bg))] relative overflow-hidden;
+  }
+
+  /* Audit card */
+  .audit-card {
+    @apply bg-card rounded border shadow-sm p-4;
+  }
+
+  /* Sticky panels */
+  .sticky-panel {
+    @apply sticky top-4 max-h-[calc(100vh-6rem)] overflow-y-auto;
+  }
+
+  /* Decision bar */
+  .decision-bar {
+    @apply fixed bottom-0 left-0 right-0 bg-card border-t shadow-lg p-4 z-50;
+  }
+
+  /* Focus ring */
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  }
+
+  /* JSON viewer */
+  .json-viewer {
+    @apply font-mono text-sm bg-[hsl(0,0%,8%)] text-[hsl(120,60%,60%)] p-4 rounded overflow-auto max-h-[500px];
+  }
+  
+  /* Scrollbar styling */
+  .custom-scrollbar::-webkit-scrollbar,
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track,
+  .scrollbar-thin::-webkit-scrollbar-track {
+    @apply bg-secondary;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb,
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    @apply bg-muted-foreground/30 rounded;
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover,
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+
+  /* Required badge */
+  .required-badge {
+    @apply bg-destructive/10 text-destructive text-[10px] px-1.5 py-0.5 rounded font-semibold uppercase;
+  }
+
+  /* Check status indicators */
+  .check-not-run {
+    @apply bg-muted text-muted-foreground;
+  }
+
+  .check-passed {
+    @apply bg-[hsl(var(--audit-pass))]/10 text-[hsl(var(--audit-pass))] border-[hsl(var(--audit-pass))]/30;
+  }
+
+  .check-failed {
+    @apply bg-[hsl(var(--audit-fail))]/10 text-[hsl(var(--audit-fail))] border-[hsl(var(--audit-fail))]/30;
+  }
+
+  .check-warning {
+    @apply bg-[hsl(var(--audit-warn))]/10 text-[hsl(var(--audit-warn))] border-[hsl(var(--audit-warn))]/30;
+  }
+}
